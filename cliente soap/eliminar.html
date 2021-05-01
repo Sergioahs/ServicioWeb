@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eliminar SOAP</title>
+        <link href= "estilos.css" rel="stylesheet"/>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    </head>
+    <body>
+        <div class="container">  
+            <form id="contact">
+              <h3>Eliminar</h3>
+              <h4>Ingresar el id del producto ha eliminar</h4>
+              <fieldset>
+                <input for="id" placeholder="Id del producto" type="number" id="id" tabindex="1" required autofocus>
+              </fieldset>
+              <fieldset>
+                <input for="r" placeholder="Resultado" type="text" id="r" tabindex="2" required>
+              </fieldset>
+                <button name="Eliminar" value="enviar" onclick="soapEliminar()" id="contact-submit" data-submit="...Sending">Eliminar</button>
+              </fieldset>
+            </form> 
+          </div>
+    </body>
+    <script src="soapEliminar.js"></script>
+</html>

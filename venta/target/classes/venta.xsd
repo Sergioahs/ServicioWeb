@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.example.org/venta" 
+    xmlns:tns="http://www.example.org/venta" elementFormDefault="qualified">
+    <element name="RegistarVentaRequest">
+        <complexType>
+            <sequence>
+                <element name="nombre" type="string"></element>
+                <element name="codigo" type="string"></element>
+                <element name="cantidad" type="int"></element>
+                <element name="precio" type="int"></element>
+                <element name="fecha" type="string"></element>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="RegistarVentaResponse">
+        <complexType>
+            <sequence>
+                <element name="mensaje" type="string"></element>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="BuscarVentaRequest">
+        <complexType/>
+    </element>
+    <element name="BuscarVentaResponse">
+        <complexType>
+            <sequence>
+                <element name="elemento" maxOccurs="unbounded">
+                    <complexType>
+                        <sequence>
+                            <element name="id" type="int"></element>
+                            <element name="nombre" type="string"></element>
+                            <element name="codigo" type="string"></element>
+                            <element name="cantidad" type="int"></element>
+                            <element name="precio" type="int"></element>
+                            <element name="fecha" type="string"></element>
+                        </sequence>
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="ModificarVentaRequest">
+        <complexType>
+            <sequence>
+                <element name="id" type="int"></element>
+                <element name="nombre" type="string"></element>
+                <element name="codigo" type="string"></element>
+                <element name="cantidad" type="int"></element>
+                <element name="precio" type="int"></element>
+                <element name="fecha" type="string"></element>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="ModificarVentaResponse">
+        <complexType>
+            <sequence>
+                <element name="mensaje" type="string"></element>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="EliminarVentaRequest">
+        <complexType>
+            <sequence>
+                <element name="id" type="int"></element>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="EliminarVentaResponse">
+        <complexType>
+            <sequence>
+                <element name="mensaje" type="string"></element>
+            </sequence>
+        </complexType>
+    </element>
+</schema>

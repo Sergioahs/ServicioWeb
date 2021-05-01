@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registrar SOAP</title>
+        <link href= "estilos.css" rel="stylesheet"/>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    </head>
+    <body>
+        <div class="container">  
+            <form id="contact">
+              <h3>Registrar Venta</h3>
+              <h4>Ingresar los datos en los campos correspondientes</h4>
+              <fieldset>
+                <input for="nombre"placeholder="Nombre del producto" type="text" id="nombre" tabindex="1" required autofocus>
+              </fieldset>
+              <fieldset>
+                <input for="codigo" placeholder="Codigo" type="text" id="codigo" tabindex="2" required>
+              </fieldset>
+              <fieldset>
+                <input for="cantidad placeholder="Cantidad" type="number" id="cantidad" tabindex="3" required>
+              </fieldset>
+              <fieldset>
+                <input for="precio" placeholder="Precio" type="number" id="precio" tabindex="4" required>
+              </fieldset>
+              <fieldset>
+                <input for="fecha" placeholder="Fecha" type="date" id="fecha" tabindex="5" required>
+              </fieldset>
+              <fieldset>
+                <input for="r" placeholder="Resultado" type="text" id="r" tabindex="6" required>
+              </fieldset>
+                <button name="Registrar" value="enviar" onclick="soapRegistrar()" id="contact-submit" data-submit="...Sending">Registrar</button>
+              </fieldset>
+            </form> 
+          </div>
+    </body>
+    <script src="soapRegistrar.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</html>  

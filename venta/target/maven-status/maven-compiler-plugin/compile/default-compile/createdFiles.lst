@@ -1,0 +1,16 @@
+org\example\venta\BuscarVentaResponse$Elemento.class
+com\example\venta\VentaEndPoint.class
+com\example\venta\Venta.class
+org\example\venta\ModificarVentaResponse.class
+org\example\venta\EliminarVentaRequest.class
+com\example\venta\IVentas.class
+com\example\venta\VentaApplication.class
+org\example\venta\BuscarVentaResponse.class
+org\example\venta\EliminarVentaResponse.class
+org\example\venta\BuscarVentaRequest.class
+org\example\venta\RegistarVentaRequest.class
+org\example\venta\RegistarVentaResponse.class
+com\example\venta\VentaConfiguracion.class
+org\example\venta\ModificarVentaRequest.class
+org\example\venta\ObjectFactory.class
+org\example\venta\package-info.class

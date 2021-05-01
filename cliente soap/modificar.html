@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modificar SOAP</title>
+        <link href= "estilos.css" rel="stylesheet"/>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    </head>
+    <body>
+        <div class="container">  
+            <form id="contact">
+              <h3>Modificar</h3>
+              <h4>Modificar los datos en los campos correspondientes</h4>
+              <fieldset>
+                <input for="id" placeholder="Codigo" type="number" id="id" tabindex="2" required>
+              </fieldset>
+              <fieldset>
+                <input for="nombre"placeholder="Nombre del producto" type="text" id="nombre" tabindex="1" required autofocus>
+              </fieldset>
+              <fieldset>
+                <input for="codigo" placeholder="Codigo" type="text" id="codigo" tabindex="2" required>
+              </fieldset>
+              <fieldset>
+                <input for="cantidad placeholder="Cantidad" type="number" id="cantidad" tabindex="3" required>
+              </fieldset>
+              <fieldset>
+                <input for="precio" placeholder="Precio" type="number" id="precio" tabindex="4" required>
+              </fieldset>
+              <fieldset>
+                <input for="fecha" placeholder="Fecha" type="date" id="fecha" tabindex="4" required>
+              </fieldset>
+              <fieldset>
+                <input for="r" placeholder="Resultado" type="text" id="r" tabindex="4" required >
+              </fieldset>
+                <button name="Modificar" value="enviar" onclick="soapModificar()" id="contact-submit" data-submit="...Sending">Modificar</button>
+              </fieldset>
+            </form> 
+          </div>
+    </body>
+    <script src="soapModificar.js"></script>
+</html>
