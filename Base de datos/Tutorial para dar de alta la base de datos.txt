@@ -1,0 +1,9 @@
+Instrucciones para crear la base de datos para el ejercicio de 
+servicio web de ventas equipo 1
+
+1.- Ejecutar la aplixacion XAMPP y levantar el servicio de Apache y MySQL
+2.- Dar clic en el boton administrar de MySQL
+3.- Dar clic en el boton nueva y asignarle el nombre 'venta'
+4.- Una vez creada la base de datos, abrirla e irse al boton importar
+5.- Descargar el archivo venta.sql que se encuentra dentro de la misma carpeta que este archivo
+6.- Seleccionarlo en la pagina del administrador y dar clic en continuar
